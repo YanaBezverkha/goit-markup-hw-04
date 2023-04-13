@@ -72,7 +72,7 @@ button {
 .section-title {
   margin-bottom: 72px;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -191,6 +191,7 @@ button {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -235,6 +236,7 @@ color: var( --white-color);
 
 .footer-social-link {
   display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: var(--font-color);
@@ -266,6 +268,7 @@ color: var( --white-color);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/hero-people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size:contain;
 }
 
 .page-title {
@@ -357,7 +360,7 @@ color: var( --white-color);
 }
 
 .team-text-wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
   background-color: var(--white-color);
   }
 
@@ -372,8 +375,11 @@ color: var( --white-color);
 
 .icon-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 24px;
 }
+
+
 
 .social-link {
   display: flex;
@@ -405,10 +411,9 @@ color: var( --white-color);
   display: flex;
   justify-content: center;
   align-items: center;
- 
   width: 168px;
   height: 88px;
-  border: 1px solid var(--light-slate);
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
@@ -419,7 +424,7 @@ border-color: var(--pressed-state);
 
 .customers-icon {
   padding: 16px 8px;
-  fill: var(--light-slate);
+  fill: #8e8f99;
 }
 
 .customers-icon:hover {
@@ -464,6 +469,7 @@ border-color: var(--pressed-state);
   border: 1px solid transparent;
   background-color: var(--pressed-state);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -474,6 +480,11 @@ border-color: var(--pressed-state);
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-text-wrapper {
