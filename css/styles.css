@@ -229,6 +229,11 @@ letter-spacing: 0.02em;
 color: var( --white-color);
 }
 
+.footer-icon-item {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-icon-list {
   display: flex;
   gap: 16px;
@@ -237,9 +242,10 @@ color: var( --white-color);
 .footer-social-link {
   display: flex;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--font-color);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--active-color);
   border-radius: 50%;
 }
 
@@ -249,8 +255,8 @@ color: var( --white-color);
 }
 
 .footer-icon {
-  margin: 8px;
-}
+  fill: var(--secondary-white-color);
+  }
 
 /**
   |===================================================================
@@ -264,11 +270,12 @@ color: var( --white-color);
   margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
+  
   background-color: var(--main-color);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)) , url(../images/hero-people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:contain;
+  background-size:cover;
 }
 
 .page-title {
@@ -379,14 +386,17 @@ color: var( --white-color);
   gap: 24px;
 }
 
-
+.social-item {
+  width: 40px;
+  height: 40px;
+}
 
 .social-link {
   display: flex;
   justify-content:center;
   align-items:center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: var(--active-color);
   border-radius: 50%;
 }
@@ -394,6 +404,10 @@ color: var( --white-color);
 .social-link:hover,
 .social-link:focus {
   background-color: var(--pressed-state);
+}
+
+.icon {
+  fill: var(--secondary-white-color);
 }
 
 
@@ -407,29 +421,35 @@ color: var( --white-color);
   gap: 24px;
 }
 
+.customers-item {
+  width: calc((100%-120px)/6);
+  width: 168px;
+  height: 88px;
+  
+}
+
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--light-slate);
+  padding: 16px 32px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
 border-color: var(--pressed-state);
+color: var(--pressed-state);
 }
 
 .customers-icon {
-  padding: 16px 8px;
-  fill: #8e8f99;
-}
+  fill: currentColor;
+} 
 
-.customers-icon:hover {
-  fill: var(--pressed-state);
-}
 
 /**
   |===================================================================
